@@ -1,0 +1,176 @@
+/* src/RecipeList.css */
+.recipe-list {
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative; /* To control the positioning of content over the background */
+    background-image: url('../images/framebg2.jpg'); /* Path to the background image */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    color: white; /* Ensure text is readable over the background */
+}
+
+.carousel {
+    width: 100%; /* Keep the carousel full width */
+    height: 500px; /* Fixed height for the carousel */
+    display: block;
+    margin: 100px auto 0px -250px; /* Shift carousel 50px to the left */
+    position: sticky;
+    border: none;
+}
+
+
+.carousel .carousel-slider, 
+.carousel .slider-wrapper, 
+.carousel .slider, 
+.carousel .slide {
+    border: none !important; 
+    /* Override any border properties */
+}
+/* Remove shadow effect on the control arrows */
+.carousel .control-arrow {
+    box-shadow: none !important;
+    background: transparent !important; /* Remove background if any */
+}
+
+/* Remove any box shadow on the carousel slides */
+.carousel .slide {
+    box-shadow: none !important;
+}
+
+/* Remove hover effects on control arrows */
+.carousel .control-arrow:hover {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Hide the "1 of 5" and similar slide indicators */
+.carousel .carousel-status {
+    display: none;
+}
+/* Ensure the background is transparent on hover for the entire carousel */
+.carousel:hover {
+    background-color: transparent;
+}
+
+/* Also ensure the slides themselves don't have a background color on hover */
+.carousel .slide:hover {
+    background-color: transparent;
+}
+
+/* Prevent background color on the carousel container on hover */
+.recipe-list:hover {
+    background-color: transparent;
+}
+
+/* Ensure that no background is added to carousel controls on hover */
+.carousel .control-arrow:hover {
+    background: transparent !important;
+}
+
+/* Ensure the play button is hidden and not interactable */
+.carousel .control-play,
+.carousel .control-play:hover,
+.carousel .control-play:active,
+.carousel .control-play:focus {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Additional specificity for inline styles override */
+.carousel .control-play[style] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+
+.category-image {
+    width: 500px; /* Fit the width of the carousel */
+    height: 500px; /* Fit the height of the carousel */
+    object-fit: contain; 
+}
+
+.recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: center;
+}
+
+.recipe-item {
+    flex: 1 1 calc(25% - 15px); /* Adjust to fit 4 items per row with spacing */
+    max-width: calc(25% - 15px); /* Adjust to fit 4 items per row with spacing */
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.recipe-image {
+    width: 150px; /* Fixed width for images */
+    height: 150px; /* Fixed height for images */
+    border-radius: 8px;
+    object-fit: contain; /* Ensure the complete image is visible */
+    background-color: #f0f0f0; 
+}
+
+.button-container1 {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 0; /* No space between the buttons */
+    margin-top: 20px; /* Space above the buttons */
+}
+
+.buttonvm {
+    padding: 10px 10px;
+    margin: 30px; /* Ensure no margin around buttons */
+    background-color: #7a57d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    max-width: 150px; /* Reduced max-width for a smaller button */
+}
+.buttonbk {
+    padding: 10px 10px;
+    margin: 30px; /* Ensure no margin around buttons */
+    background-color: #7a57d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    max-width: 150px; /* Reduced max-width for a smaller button */
+}
+
+
+.button:hover {
+    background-color: #6b4dbf;
+}
+
+
+
+.button:hover {
+    background-color: #6b4dbf;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .recipe-item {
+        flex: 1 1 calc(50% - 15px); /* Fit 2 items per row */
+        max-width: calc(50% - 15px); /* Fit 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-item {
+        flex: 1 1 100%; /* Fit 1 item per row */
+        max-width: 100%; /* Fit 1 item per row */
+    }
+}

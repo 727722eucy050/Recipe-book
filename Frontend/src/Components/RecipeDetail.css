@@ -1,0 +1,144 @@
+/* Add this to your global CSS or in the RecipeDetail.css */
+
+
+.main {
+  width: 1500px;
+  margin-top: 0; /* Ensure there's no margin at the top */
+}
+
+.Appbar {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+/* Optional: Ensure no extra margin/padding on the Appbar's parent */
+.main {
+  margin: 0;
+  padding: 0;
+}
+
+.appbar-container {
+  margin: 0;
+  padding: 0;
+}
+.recipe-container {
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width:100%;
+  
+  /*padding: 0 20px; /* Add padding to prevent overflow */
+  background-color: #f0f4f8; /* Softer background color */
+ /* max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.recipe-card {
+  padding:40px;
+  
+  width: 40%;
+  background-color: #fff;
+  border: 1px solid #e0e4e8;
+  border-radius: 15px; /* Slightly rounder corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-8px); /* More pronounced lift on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.recipe-image {
+  width: 100%;
+  height: 180px; /* Adjusted height for a more balanced look */
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.recipe-details {
+  padding: 20px; /* Increased padding for more spacing */
+  text-align: center;
+}
+
+.recipe-details h3 {
+  font-size: 1.4em;
+  margin-bottom: 12px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.recipe-details p {
+  font-size: 1em;
+  color: #7f8c8d; /* Softer text color */
+  margin-bottom: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay for better focus */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 650px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #e74c3c; /* Red color for close button */
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  width: 10%;
+  text-align: center; /* Centers the button horizontally */
+  margin-top: 20px;
+}
+
+.backButton {
+  margin-left: 700px;
+  width:100px;
+  margin-right:10px;
+  margin-left: 40px;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s;
+}
+
+.backButton:hover {
+  background-color: #2980b9; /* Slightly darker shade on hover */
+  transform: translateY(-2px); /* Small lift on hover */
+}

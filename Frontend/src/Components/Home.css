@@ -1,0 +1,67 @@
+/* Home.css */
+
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.home-container h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  margin: 20px 0;
+  width: 90%;
+  max-width: 600px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.home-container p {
+  /* height: 100%; */
+  margin: 2px 60px;
+  color: #666;
+  font-size: 1.2em;
+}
+
+.button-containers {
+  display: flex;
+  
+  gap: 10px;
+  justify-content: center;
+  align-items: center; /* Vertically center the buttons if they have different heights */
+  margin-top: 20px;
+  white-space: nowrap; /* Prevent line break */
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+}
+
+
+.buttonhm {
+  padding: 10px 20px;
+  background-color: #7a57d1;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.button-container button:hover {
+  background-color: #6b4dbf;
+}
